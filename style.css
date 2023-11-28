@@ -1,0 +1,603 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    text-decoration: none;
+}
+
+
+html, body{
+    height: 100%;
+}
+
+
+@media screen and (max-width:480px) {
+    
+    .instantGamingLogin{
+        display: flex;
+        height: 100%;
+        padding: 20px;
+        background-color: transparent;
+        background-color: rgb(48, 48, 48);
+    }
+
+
+    .loginContainer{
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .logo{
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .logo img{
+        width: 150px;
+    }
+
+
+
+    .iniciarSessaoContainer h2{
+        font-size: 15px;
+        margin-bottom: 3vh;
+        color: white;
+    }
+
+
+    .entrarComo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3vh;
+    }
+
+
+    .entrarComo a{
+        width: 20%;
+        height: 38px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .entrarComo a:nth-child(1){
+        color: white;
+        background-color: rgb(24, 132, 233);
+        font-size: 24px;
+    }
+    
+    
+    .entrarComo a:nth-child(2){
+        color: red;
+        background-color: white;
+        font-size: 24px;
+    }
+    
+    
+    .entrarComo a:nth-child(3){
+        color: white;
+        background-color: black;
+        font-size: 24px;
+    }
+    
+    
+    .entrarComo a:nth-child(4){
+        color: white;
+        background-color: rgb(89, 103, 255);
+        font-size: 24px;
+    }
+
+
+
+
+    .separadorContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4vh;
+    }
+    
+    
+    
+    .separadorContainer .linha1{
+        padding: 1px;
+        background-color: grey;
+        width: 48%;
+    }
+    
+    
+    .separadorContainer .linha2{
+        padding: 1px;
+        background-color: grey;
+        width: 48%;
+    }
+    
+    .separadorContainer span{
+        padding: 10px;
+        color: white;
+    }
+    
+
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+
+    form input{
+        border: 2px solid rgba(128, 128, 128, 0.59);
+        background-color: rgb(43, 43, 43);
+        padding: 10px;
+        border-radius: 4px;
+        color: lightgrey;
+        font-size: 14px;
+        outline: none;
+    }
+    
+    
+    
+    form input:hover{
+        border: 2px solid orangered;
+        transition: 0.4s;
+    }
+    
+    
+    form input:focus{
+        border: 2px solid orangered;
+    }
+    
+    form button{
+        padding: 10px;
+        color: white;
+        border-radius: 6px;
+        background-image: linear-gradient(to top, rgb(248, 125, 17) 0%, rgb(252, 95, 52) 100%);
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+
+    .links{
+        width: 100%;
+        margin-top: 3vh;
+        text-align: center;
+    }
+
+
+    .links a{
+        font-size: 12px;
+        color: white;
+        padding-bottom: 20px;
+    }
+
+
+    .imagemGames{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 481px) and (max-width:819px) {
+
+    .instantGamingLogin{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+
+    .loginContainer{
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+        background-color: rgb(48, 48, 48);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+
+    .logo{
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+
+    .logo img{
+        width: 175px;
+    }
+
+
+
+    .iniciarSessaoContainer h2{
+        margin-bottom: 2.5vh;
+        color: white;
+        font-size: 22px;
+    }
+    
+    
+    .entrarComo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2vh;
+    }
+    
+    .entrarComo a{
+        width: 20%;
+        height: 50px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .entrarComo a:hover{
+        border: 2px solid orangered;
+    }
+    
+    
+    .entrarComo a:nth-child(1){
+        color: white;
+        background-color: rgb(24, 132, 233);
+        font-size: 24px;
+    }
+    
+    
+    .entrarComo a:nth-child(2){
+        color: red;
+        background-color: white;
+        font-size: 24px;
+    }
+    
+    
+    .entrarComo a:nth-child(3){
+        color: white;
+        background-color: black;
+        font-size: 24px;
+    }
+    
+    
+    .entrarComo a:nth-child(4){
+        color: white;
+        background-color: rgb(89, 103, 255);
+        font-size: 24px;
+    }
+    
+    
+    
+    
+    .separadorContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2vh;
+    }
+    
+    
+    
+    .separadorContainer .linha1{
+        padding: 1px;
+        background-color: grey;
+        width: 48%;
+    }
+    
+    
+    .separadorContainer .linha2{
+        padding: 1px;
+        background-color: grey;
+        width: 48%;
+    }
+    
+    .separadorContainer span{
+        padding: 10px;
+        color: white;
+    }
+    
+    
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    form input{
+        border: 2px solid rgba(128, 128, 128, 0.765);
+        background-color: rgb(43, 43, 43);
+        padding: 20px;
+        border-radius: 6px;
+        color: lightgrey;
+        font-size: 16px;
+        outline: none;
+    }
+    
+    
+    
+    form input:hover{
+        border: 2px solid orangered;
+        transition: 0.4s;
+    }
+    
+    
+    form input:focus{
+        border: 2px solid orangered;
+    }
+    
+    form button{
+        padding: 20px;
+        color: white;
+        border-radius: 6px;
+        background-image: linear-gradient(to top, rgb(248, 125, 17) 0%, rgb(252, 95, 52) 100%);
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    
+    
+    
+    .links{
+        margin-top: 2vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+    .links a{
+        color: white;
+        font-size: 14px;
+    }
+    
+    .links a:hover{
+        color: rgba(254, 114, 62, 0.883);
+    }
+    
+    .links span{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+
+
+
+
+    .imagemGames{
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width:820px) {
+    
+.instantGamingLogin{
+    height: 100%;
+    background-color: rgb(121, 121, 121);
+    display: flex;
+}
+
+
+.loginContainer{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    padding: 25px;
+    background-color: rgb(48, 48, 48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo{
+    position: absolute;
+    top: 0;
+    left: 25px;
+}
+
+.loginContainer .logo img{
+    width: 175px;
+}
+
+
+
+.iniciarSessaoContainer{
+    background-color: transparent;
+}
+
+.iniciarSessaoContainer h2{
+    margin-bottom: 2vh;
+    color: white;
+}
+
+
+.entrarComo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.entrarComo a{
+    width: 20%;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.entrarComo a:hover{
+    border: 2px solid orangered;
+}
+
+
+.entrarComo a:nth-child(1){
+    color: white;
+    background-color: rgb(24, 132, 233);
+    font-size: 28px;
+}
+
+
+.entrarComo a:nth-child(2){
+    color: red;
+    background-color: white;
+    font-size: 28px;
+}
+
+
+.entrarComo a:nth-child(3){
+    color: white;
+    background-color: black;
+    font-size: 28px;
+}
+
+
+.entrarComo a:nth-child(4){
+    color: white;
+    background-color: rgb(89, 103, 255);
+    font-size: 28px;
+}
+
+
+
+
+.separadorContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+
+
+.separadorContainer .linha1{
+    padding: 1px;
+    background-color: grey;
+    width: 48%;
+}
+
+
+.separadorContainer .linha2{
+    padding: 1px;
+    background-color: grey;
+    width: 48%;
+}
+
+.separadorContainer span{
+    padding: 10px;
+    color: white;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input{
+    border: 2px solid rgba(128, 128, 128, 0.765);
+    background-color: rgb(43, 43, 43);
+    padding: 20px;
+    border-radius: 6px;
+    color: lightgrey;
+    font-size: 16px;
+    outline: none;
+}
+
+
+
+form input:hover{
+    border: 2px solid orangered;
+    transition: 0.4s;
+}
+
+
+form input:focus{
+    border: 2px solid orangered;
+}
+
+form button{
+    padding: 20px;
+    color: white;
+    border-radius: 6px;
+    background-image: linear-gradient(to top, rgb(248, 125, 17) 0%, rgb(252, 95, 52) 100%);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+
+.links{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.links a{
+    color: white;
+    font-size: 14px;
+}
+
+.links a:hover{
+    color: rgba(254, 114, 62, 0.883);
+}
+
+.links span{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.imagemGames{
+    background-image: url(imagens/wallpaper.jpg);
+    width: 50%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+}
